@@ -11,11 +11,11 @@ func main() {
 
 	models.ConnectDataBase()
 
-	r.GET("/books", controllers.FindBooks)
-	r.POST("/books", controllers.CreateBook)
-	r.GET("/books/:id", controllers.FindBook)
-	r.PATCH("/books/:id", controllers.UpdateBook) //only updates specified keys in a book
-	r.DELETE("/books/:id", controllers.DeleteBook)
+	r.GET("/users", controllers.FindUsers)
+	r.POST("/users", controllers.CreateUser)
+	r.GET("/users/:id", controllers.FindUser)
+	r.PATCH("/users/:id", controllers.UpdateUser) //only updates specified keys in a User
+	r.DELETE("/users/:id", controllers.DeleteUser)
 
 	r.Run()
 }
